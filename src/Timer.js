@@ -13,7 +13,9 @@ class Timer extends Component {
     setInterval(this.clockTick, 1000);
   }
 
-
+  componentWillUnmount() {
+    clearInterval(this.clickTick)
+  }
 
 
 
